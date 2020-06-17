@@ -1,8 +1,8 @@
 
-// Read a file
-//      require const fsPromises = require('fs').promises;
+// // Read a file
+// //      require const fsPromises = require('fs').promises;
 const fs = require('fs').promises;
-//      use fsPromises.readFile to read a file
+// //      use fsPromises.readFile to read a file
 // const promiseToReadFile = fs.readFile('./README.md', { encoding: 'utf8' });
 // //      then console.log the file
 // promiseToReadFile
@@ -21,10 +21,9 @@ const fs = require('fs').promises;
 
 // Copy a file
 //      use fsPromises.readFile to read a file
-const promiseToReadFile = fs.readFile('./README.md', { encoding: 'utf8' });
+const promiseToReadFileTwo = fs.readFile('./README.md', { encoding: 'utf8' });
 //      then use fsPromises.writeFile to write the read data
-const promiseToWriteFile = fs.writeFile('./my-copy-of-README.md', 'this is the copy of README file');
+const promiseToWriteFileTwo = fs.writeFile('./my-copy-of-README.md', 'this is the copy of README file');
 //      then console.log "DONE!"
-Promise.all([promiseToReadFile, promiseToWriteFile]).then(() => 
+Promise.all([promiseToReadFileTwo, promiseToWriteFileTwo]).then(() => 
   console.log('DONE!'));
-
